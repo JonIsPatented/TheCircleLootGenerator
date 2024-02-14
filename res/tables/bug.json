@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "type": "item",
+      "name": "Light Bulk of Chitin",
+      "copper_value": 15,
+      "weight": 15
+    },
+    {
+      "type": "item",
+      "name": "Vial of Rich Haemolymph",
+      "copper_value": 100,
+      "weight": 2
+    }
+  ]
+}
