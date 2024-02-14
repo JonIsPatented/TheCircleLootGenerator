@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class LootTable {
 
-    private List<Entry> lootTableEntries = new ArrayList<>();
+    private final List<Entry> lootTableEntries = new ArrayList<>();
 
     public LootItem getLoot() {
         long totalWeight = lootTableEntries.stream().map(Entry::getWeight).reduce(0L, Long::sum);
@@ -50,6 +50,9 @@ public class LootTable {
         String baseName = (String) lootTableObject.get("base");
         if (baseName != null)
             table.lootTableEntries.addAll(createFromJson(baseName).lootTableEntries);
+
+        if (lootTableEntries == null)
+            return table;
 
         // Determine if each entry is an item or a pool and parse accordingly
         for (Object o : lootTableEntries) {
