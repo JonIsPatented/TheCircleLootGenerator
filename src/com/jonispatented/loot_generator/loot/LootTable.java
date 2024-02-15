@@ -1,4 +1,4 @@
-package com.jonispatented.loot_generator;
+package com.jonispatented.loot_generator.loot;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -24,6 +24,17 @@ public class LootTable {
                 return entry.getLoot();
         }
         return null;
+    }
+
+    public List<LootItem> getLootTableEntries() {
+        List<LootItem> itemList = new ArrayList<>();
+        for (Entry entry : lootTableEntries) {
+            if (entry instanceof PoolEntry poolEntry)
+                itemList.addAll(poolEntry.lootTable.getLootTableEntries());
+            else if (entry instanceof ItemEntry itemEntry)
+                itemList.add(itemEntry.lootItem);
+        }
+        return itemList;
     }
 
     public static LootTable createFromJson(String path) {

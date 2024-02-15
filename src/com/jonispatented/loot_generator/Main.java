@@ -1,15 +1,17 @@
 package com.jonispatented.loot_generator;
 
+import com.jonispatented.loot_generator.loot.LootTable;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        LootTable lootTable = LootTable.createFromJson("rust_monster");
+        Creature rustMonster = new Creature.Builder()
+                .name("Rust Monster").level((byte)3)
+                .table(LootTable.createFromJson("rust_monster"))
+                .build();
 
-        for (int i = 0; i < 20; i++) {
-            LootItem loot = lootTable.getLoot();
-            System.out.println(loot);
-        }
+        System.out.println(rustMonster.generateLoot());
 
     }
 
