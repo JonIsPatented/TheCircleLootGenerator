@@ -40,10 +40,8 @@ public class LootTable {
     public static LootTable createFromJson(String path) {
         JSONParser parser = new JSONParser();
         JSONObject lootTableObject;
-        try {
-            lootTableObject = (JSONObject) parser.parse(
-                    new FileReader("res/tables/" + path + ".json")
-            );
+        try (FileReader tableReader = new FileReader("res/tables/" + path + ".json")) {
+            lootTableObject = (JSONObject) parser.parse(tableReader);
         } catch (IOException | ParseException e) {
             e.printStackTrace();
             return new LootTable();
