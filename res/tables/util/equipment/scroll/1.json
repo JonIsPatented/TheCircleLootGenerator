@@ -1,0 +1,94 @@
+{
+  "entries": [
+    {
+      "type": "item",
+      "name": "Scroll of Color Spray",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Déjà Vu",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Draw Ire",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Feather Fall",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Flourishing Flora",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Grease",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Helpful Steps",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Instant Pottery",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Jump",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Kinetic Ram",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Negate Aroma",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Pocket Library",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Shattering Gem",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Temporary Tool",
+      "copper_value": 400,
+      "weight": 10
+    },
+    {
+      "type": "item",
+      "name": "Scroll of Weaken Earth",
+      "copper_value": 400,
+      "weight": 10
+    }
+  ]
+}
