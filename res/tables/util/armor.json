@@ -1,0 +1,9 @@
+{
+  "entries": [
+    {
+      "type": "pool",
+      "base": "util/metal_armor",
+      "weight": 10
+    }
+  ]
+}

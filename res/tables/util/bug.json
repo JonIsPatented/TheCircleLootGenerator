@@ -3,13 +3,13 @@
     {
       "type": "item",
       "name": "Light Bulk of Chitin",
-      "copper_value": 15,
+      "copper_value": 35,
       "weight": 15
     },
     {
       "type": "item",
       "name": "Vial of Rich Haemolymph",
-      "copper_value": 100,
+      "copper_value": 220,
       "weight": 2
     }
   ]

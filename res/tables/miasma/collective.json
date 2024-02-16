@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "type": "pool",
+      "base": "miasma/base",
+      "weight": 9
+    },
+    {
+      "type": "pool",
+      "entries": [
+        {
+          "type": "pool",
+          "base": "util/adventurer",
+          "weight": 4
+        },
+        {
+          "type": "pool",
+          "base": "util/high_tier_loot",
+          "weight": 5
+        }
+      ],
+      "weight": 10
+    }
+  ]
+}

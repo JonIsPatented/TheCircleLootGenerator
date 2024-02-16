@@ -75,6 +75,8 @@ public class LootTable {
             else if ("item".equals(entry.get("type"))) {
                 ItemEntry tableEntryToAdd = new ItemEntry();
                 tableEntryToAdd.weight = (long) entry.get("weight");
+                if (tableEntryToAdd.weight == 0)
+                    tableEntryToAdd.weight = 1;
                 tableEntryToAdd.lootItem = new LootItem(
                         (String) entry.get("name"),
                         (long) entry.get("copper_value")

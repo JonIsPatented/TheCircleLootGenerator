@@ -20,10 +20,13 @@ public record Creature(String name, LootTable lootTable, byte level, long copper
         LootYield.Builder lootYieldBuilder = new LootYield.Builder();
 
         long currentBudget = copperBudget + new Random().nextLong(-copperBudget / 7, copperBudget / 7);
-        long lowerThreshold = lootTable.getLootTableEntries().stream()
+        long lowerThreshold = Math.max(
+                lootTable.getLootTableEntries().stream()
                 .min(Comparator.comparing(LootItem::copperValue))
                 .orElse(new LootItem("ERROR", 0L))
-                .copperValue() * 3;
+                .copperValue() * 2,
+                Creature.Builder.budgetForLevel.get(level) / 15
+        );
         while (currentBudget > lowerThreshold) {
             LootItem currentItem = lootTable.getLoot();
             if (currentItem.copperValue() > currentBudget)

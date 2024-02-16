@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "type": "item",
+      "name": "Light Bulk of Fungal Tissue",
+      "copper_value": 25,
+      "weight": 5
+    },
+    {
+      "type": "item",
+      "name": "Light Bulk of Strong-Braided Mycelium",
+      "copper_value": 400,
+      "weight": 2
+    }
+  ]
+}

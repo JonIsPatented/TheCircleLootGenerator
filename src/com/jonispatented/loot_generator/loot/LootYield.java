@@ -1,5 +1,6 @@
 package com.jonispatented.loot_generator.loot;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +18,9 @@ public class LootYield {
         builder.append("@~-~@~-~@~-~@~-~@~-~@~-~@~-~@~-~@~-~@~-~@\n\n");
 
         long totalItemValue = 0;
-        for (LootItem item : lootCount.keySet()) {
+        for (LootItem item : lootCount.keySet().stream()
+                .sorted(Comparator.comparing(LootItem::name))
+                .toList()) {
             long count = lootCount.get(item);
             long value = item.copperValue();
             builder.append("Name: ")

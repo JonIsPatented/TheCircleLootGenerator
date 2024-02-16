@@ -1,0 +1,9 @@
+{
+  "entries": [
+    {
+      "type": "pool",
+      "base": "util/metal_weapons",
+      "weight": 10
+    }
+  ]
+}

@@ -2,16 +2,16 @@
   "entries": [
     {
       "type": "pool",
-      "base": "bug",
+      "base": "util/bug",
       "entries": [
         {
           "type": "item",
-          "name": "Pound of Rust Monster Meat",
-          "copper_value": 20,
-          "weight": 5
+          "name": "Bulk of Rust Monster Meat",
+          "copper_value": 250,
+          "weight": 9
         }
       ],
-      "weight": 10
+      "weight": 16
     },
     {
       "type": "pool",
@@ -20,27 +20,26 @@
           "type": "item",
           "name": "Hunk of Rusted Iron",
           "copper_value": 10,
-          "weight": 6
+          "weight": 7
         },
         {
           "type": "pool",
           "entries": [
             {
               "type": "pool",
-              "base": "metal_armor",
-              "weight": 1
+              "base": "util/metal_armor",
+              "weight": 2
             },
             {
-              "type": "item",
-              "name": "Metal Weapon",
-              "copper_value": 200,
-              "weight": 1
+              "type": "pool",
+              "base": "util/metal_weapons",
+              "weight": 3
             }
           ],
           "weight": 5
         }
       ],
-      "weight": 5
+      "weight": 3
     }
   ]
 }

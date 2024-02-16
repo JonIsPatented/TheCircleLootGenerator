@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {
+      "type": "pool",
+      "base": "miasma/base",
+      "weight": 13
+    },
+    {
+      "type": "pool",
+      "base": "util/adventurer",
+      "weight": 5
+    }
+  ]
+}

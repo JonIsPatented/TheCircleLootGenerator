@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Creature rustMonster = Creature.createFromJson("rust_monster");
+        Creature monster = Creature.createFromJson("miasma_collective");
 
-        System.out.println(rustMonster.generateLoot());
+        System.out.println(monster.generateLoot());
 
     }
 
