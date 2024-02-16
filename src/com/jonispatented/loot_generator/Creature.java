@@ -19,7 +19,7 @@ public record Creature(String name, LootTable lootTable, byte level, long copper
     public LootYield generateLoot() {
         LootYield.Builder lootYieldBuilder = new LootYield.Builder();
 
-        long currentBudget = copperBudget + new Random().nextLong(-copperBudget / 7, copperBudget / 7);
+        long currentBudget = copperBudget + new Random().nextLong(-copperBudget / 4, copperBudget / 4);
         long lowerThreshold = Math.max(
                 lootTable.getLootTableEntries().stream()
                 .min(Comparator.comparing(LootItem::copperValue))

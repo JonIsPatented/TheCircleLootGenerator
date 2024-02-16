@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "type": "pool",
+      "base": "util/adventurer/5-8",
+      "weight": 5
+    },
+    {
+      "type": "pool",
+      "entries": [
+        {
+          "type": "item",
+          "name": "PLACEHOLDER",
+          "copper_value": 50000,
+          "weight": 1
+        }
+      ],
+      "weight": 6
+    }
+  ]
+}

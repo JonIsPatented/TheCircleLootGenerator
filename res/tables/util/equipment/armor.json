@@ -2,7 +2,7 @@
   "entries": [
     {
       "type": "pool",
-      "base": "util/metal_weapons",
+      "base": "util/equipment/metal_armor",
       "weight": 10
     }
   ]

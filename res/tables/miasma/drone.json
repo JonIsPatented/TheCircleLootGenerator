@@ -7,7 +7,7 @@
     },
     {
       "type": "pool",
-      "base": "util/adventurer",
+      "base": "util/adventurer/1-4",
       "weight": 5
     }
   ]

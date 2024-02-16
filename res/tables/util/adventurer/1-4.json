@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {
+      "type": "pool",
+      "base": "util/equipment/armor",
+      "weight": 9
+    },
+    {
+      "type": "pool",
+      "base": "util/equipment/weapons",
+      "weight": 13
+    },
+    {
+      "type": "pool",
+      "base": "util/equipment/adventuring_gear",
+      "weight": 21
+    }
+  ]
+}
